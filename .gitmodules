@@ -1,0 +1,6 @@
+[submodule "front"]
+	path = front
+	url = https://github.com/UrielFisher/Meter-Reader-web-client.git
+[submodule "back"]
+	path = back
+	url = https://github.com/UrielFisher/Meter-Reader-web-server.git
