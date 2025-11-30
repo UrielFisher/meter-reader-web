@@ -1,0 +1,22 @@
+services:
+  backend:
+    build: ./back
+    container_name: meter-reader-back
+    volumes:
+      - ./sqlite_db:/app/sqlite_db
+    expose:
+      - "5000"
+    networks:
+      - mr_net
+
+  frontend:
+    build: ./front
+    container_name: meter-reader-front
+    ports:
+      - "80:5173"
+    networks:
+      - mr_net
+
+
+networks:
+  mr_net:
