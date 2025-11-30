@@ -1,5 +1,5 @@
 services:
-  backend:
+  meter-reader-backend:
     build: ./back
     container_name: meter-reader-back
     volumes:
@@ -9,7 +9,7 @@ services:
     networks:
       - mr_net
 
-  frontend:
+  meter-reader-frontend:
     build: ./front
     container_name: meter-reader-front
     ports:
