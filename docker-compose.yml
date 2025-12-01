@@ -10,8 +10,8 @@ services:
 
   frontend:
     build: ./front
-    expose:
-      - "80"
+    ports:
+      - "8080:80"
     networks:
       - mr_net
 
