@@ -11,7 +11,7 @@ services:
   frontend:
     build: ./front
     ports:
-      - "8080:80"
+      - "80:80"
     networks:
       - mr_net
 
